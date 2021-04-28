@@ -17,6 +17,7 @@ export default (api: IApi) => {
               schemaPath: joi.string(),
               mock: joi.boolean(),
               projectName: joi.string(),
+              hook: joi.object(),
             }),
           ),
           joi.object({
@@ -24,6 +25,7 @@ export default (api: IApi) => {
             schemaPath: joi.string(),
             mock: joi.boolean(),
             projectName: joi.string(),
+            hook: joi.object(),
           }),
         );
       },
